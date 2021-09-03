@@ -1,4 +1,4 @@
-import {  quanLyPhimService} from "../../services/quanly"
+import { quanLyPhimService } from "../../services/quanly"
 import { displayLoadingAction, hideLoadingAction } from "./LoadingActions";
 import { SET_FILM, SET_FILM_DETAIL, SET_THONG_TIN_PHIM } from "./types/FilmType";
 import swal from '@sweetalert/with-react'
@@ -14,7 +14,7 @@ export const getApiFilmAction = (tenPhim = '') => {
 
         } catch (error) {
         }
-    } 
+    }
 }
 
 export const getFilmDetailAction = (maPhim) => {
@@ -36,7 +36,7 @@ export const getFilmDetailAction = (maPhim) => {
 export const themPhimUpLoadHinhAction = (formData) => {
     return async dispatch => {
         try {
-            const result=await quanLyPhimService.themPhimUpLoadHinh(formData)
+            const result = await quanLyPhimService.themPhimUpLoadHinh(formData)
             await swal(
                 <div>
                     <h5>Bạn đã thêm phim thành công</h5>
@@ -57,13 +57,13 @@ export const layThongTinPhimAction = (maPhim) => {
     return async (dispatch) => {
         dispatch(displayLoadingAction)
         try {
-            let result=await quanLyPhimService.layThongTinPhim(maPhim)
-           await dispatch({
+            let result = await quanLyPhimService.layThongTinPhim(maPhim)
+            await dispatch({
                 type: SET_THONG_TIN_PHIM,
                 thongTinPhim: result.data,
             })
             dispatch(hideLoadingAction)
-        } 
+        }
         catch (error) {
         }
     }
@@ -72,7 +72,7 @@ export const layThongTinPhimAction = (maPhim) => {
 export const capNhatPhimUploadAction = (formData) => {
     return async dispatch => {
         try {
-            const result =await quanLyPhimService.capNhatPhimUpLoad(formData)
+            const result = await quanLyPhimService.capNhatPhimUpLoad(formData)
             await swal(
                 <div>
                     <h5>Cập nhật phim thành công!</h5>
@@ -92,7 +92,7 @@ export const capNhatPhimUploadAction = (formData) => {
 export const xoaPhim = (maPhim) => {
     return async (dispatch) => {
         try {
-            const result=await quanLyPhimService.xoaPhim(maPhim)
+            const result = await quanLyPhimService.xoaPhim(maPhim)
             await swal(
                 <div>
                     <h5>{result.data}</h5>
@@ -103,10 +103,10 @@ export const xoaPhim = (maPhim) => {
         catch (error) {
             await swal(
                 <div>
-                    <h5>{error.response?.data}</h5>
+                    {error.response?.data !== undefined ? <h5>{error.response?.data}</h5> : <h5>Xóa không thành công, thử lại sau!</h5>}
                 </div>
             )
-        } 
+        }
     }
 }
 
@@ -115,7 +115,7 @@ export const xoaPhim = (maPhim) => {
 export const taoLichChieuAction = (lichChieu) => {
     return async (dispatch) => {
         try {
-            const result=await quanLyPhimService.taoLichChieu(lichChieu)
+            const result = await quanLyPhimService.taoLichChieu(lichChieu)
             await swal(
                 <div>
                     <h5>{result.data}</h5>
