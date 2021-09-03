@@ -1,0 +1,29 @@
+.footer__content {
+    z-index: 1000;
+    background-color: #222222;
+}
+.footer__content .footer__company {
+    list-style: none;
+}
+.footer__content .footer__company ul {
+    clear: both;
+}
+.footer__content .footer__company li {
+    display: inline;
+    margin: 5px;
+}
+.footer__content .media__icon {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    .footer__content .footer__company {
+        display: none;
+    }
+    .footer__content .mobile__app{
+        display:none;
+    }
+    .footer__content .media__icon {
+        display: block;
+    }
+}

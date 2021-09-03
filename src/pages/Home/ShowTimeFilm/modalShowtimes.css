@@ -1,0 +1,45 @@
+.modal-showtime-film .modal-header {
+    position: relative;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+.modal-showtime-film .modal-content {
+    border: none !important;
+    background: transparent;
+}
+.modal-showtime-film .close {
+    z-index: 100;
+    color: red;
+    font-size: 60px;
+    top: -35px;
+    right: -20px;
+    position: absolute;
+    display: block;
+}
+@media screen and (max-width: 575px) {
+    .modal-showtime-film {
+        padding: 0px 20px;
+    }
+}
+
+/*icon play*/
+.button-showtime-film .fa-play-circle {
+    font-size: 45px;
+    opacity: 0.7;
+    transition: 0.1s;
+}
+.button-showtime-film .fa-play-circle:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.modal-showtime-film iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}

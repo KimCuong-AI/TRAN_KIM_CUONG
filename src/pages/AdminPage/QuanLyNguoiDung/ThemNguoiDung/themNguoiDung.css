@@ -1,0 +1,23 @@
+.adminAddUser .ant-modal-close-x {
+    position: absolute;
+    font-size: 35px;
+    color: red;
+    top: -38px;
+    right: -26px;
+    font-weight: bold!important;
+}
+.adminAddUser .ant-modal-close-x:hover {
+    color:red;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+/*chức năng thêm người dùng*/
+.adminAddUser .ant-modal-content {
+    background:#fafafac7;
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+     backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px); 
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+   
+}

@@ -1,0 +1,13 @@
+.history__checkout {
+    width: 75%;
+    margin: auto;
+    padding-top: 20px;
+}
+@media screen and (max-width: 767px) {
+    .history__checkout {
+        width: 100%;
+        margin: auto;
+        padding-top: 20px;
+    }
+}
+    

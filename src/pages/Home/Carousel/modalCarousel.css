@@ -1,0 +1,39 @@
+/*modal carousel*/
+.modal__carousel .modal-header {
+    position: relative;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+.modal__carousel .modal-content {
+    border: none !important;
+    background: transparent;
+}
+.modal__carousel .close {
+    font-size: 60px !important;
+    z-index: 100;
+    color: red;
+    font-size: 50px;
+    top: -35px;
+    right: -20px;
+    position: absolute;
+    display: block;
+}
+.modal__carousel iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:575px) {
+    .modal__carousel {
+       padding:0px 20px;
+    }
+}
+
+.carousel-modal i:hover{
+    transform: scale(1.1);
+}

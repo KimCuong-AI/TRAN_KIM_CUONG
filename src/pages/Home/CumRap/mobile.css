@@ -1,0 +1,65 @@
+.cumrap__mobile{
+    max-height: 600px;
+    overflow-y: auto;
+}
+.cumrap__mobile::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #e6e6e6;
+}
+.cumrap__mobile::-webkit-scrollbar {
+    width: 6px;
+}
+.cumrap__mobile::-webkit-scrollbar-thumb { 
+    border-radius: 10px;
+    background-color: #565050aa;
+}
+.cumrap__mobile .anticon svg{
+    padding: 0!important;
+    margin: 0!important;
+}
+.cumrap__mobile .ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow{
+    margin-right: 5px!important;
+}
+.cumrap__mobile .ant-collapse-header{
+    display: flex;
+    justify-content: start;
+}
+.chiTietPhim__mobile{ 
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.chiTietPhim__mobile::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #e6e6e6;
+}
+.chiTietPhim__mobile::-webkit-scrollbar {
+    width: 6px;
+}
+.chiTietPhim__mobile::-webkit-scrollbar-thumb { 
+    border-radius: 10px;
+    background-color: #565050aa;
+}
+.cumrap__mobile  .ant-collapse-content > .ant-collapse-content-box{
+    padding:0px!important;
+}
+@media screen and (max-width:320px) {
+   
+    .cumrap__mobile .ngayGioChieu {
+        padding: 8px 2px!important;
+        font-size: 13px;
+    } 
+    .cumrap__mobile .name-film{
+        font-size: 14px;
+    }
+    .cumrap__mobile .run-time{
+        font-size: 13px;
+    }
+    .cumrap__mobile .ten-cum-rap{
+        font-size: 14px;
+    }
+    .cumrap__mobile .dia-chi{
+        font-size: 11px;
+    }
+
+} 

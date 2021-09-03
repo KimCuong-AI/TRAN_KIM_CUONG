@@ -1,0 +1,72 @@
+.header__content {
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+    top: 0px;
+    background-color: #ffffffa7;
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 2px 5px 3px rgba(202, 197, 197, 0.571);
+}
+.header__content .navbar-nav {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header__content li{
+    margin: 0 3px;
+}
+.header__content li a {
+    color: #020202 !important;
+    font-size: 16px !important;
+    margin: 0 3px;
+    font-weight: 500;
+}
+.header__content .user__image {
+    width: 50px;
+    height: 50px; 
+    border-radius: 40px; 
+} 
+
+/* button menu when hover salce */
+.header__content button:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+/* button icon search */
+.header__content .form__submit button {
+    border: none;
+}
+
+/* authentication */
+.header__content .fa-user-circle {
+    font-size: 30px;
+    margin-right: 5px;
+}
+.header__content .authentication li i, .header__content .authentication li span {
+    color: #616161;
+}
+.header__content a:hover i {
+    color: rgb(236, 24, 24) !important;
+}
+.header__content a:hover span {
+    color: rgb(236, 24, 24) !important;
+}
+
+/*search button icon*/
+.header__content .form__submit {
+    position: relative;
+}
+.header__content .form__submit button {
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 5%;
+    margin: 0;
+    padding: 0;
+    background-color: transparent !important;
+}
+.header__content .form-control:focus {
+    border-color:whitesmoke;
+    box-shadow: 3px 3px 5px 1px #acaaaad4 ;
+    backdrop-filter: blur(10px);
+  }

@@ -1,0 +1,57 @@
+.modal-custom-login{
+    padding: 30px;
+}
+.modal-custom-login .modal-content{
+    color: white;
+    border: none !important;
+    backdrop-filter: blur(6px);
+    background: #0d3d72a8;
+    height: 100%;
+}  
+.modal-custom-login .modal-content h3{
+    color: white;
+}
+
+.modal-custom-login .modal-header {
+    position: relative;
+    border: none;
+    margin: 0px;
+    padding: 0px; 
+}
+.modal-custom-login .close {
+    z-index: 100;
+    color: red;
+    font-size: 60px;
+    top: -39px;
+    right: -20px;
+    position: absolute;
+    display: block;
+}
+.modal-custom-login .btn__dangNhap{
+    background:#3e63b6;
+    border: none;
+    color: white;
+}
+
+.modal-custom-login .form-group h5{
+    font-family:-moz-initial;
+    color: #bfbfbf;
+    font-size: 17px;
+}
+@media screen and (max-width: 480px) {
+    .modal__login {
+        padding: 0px  !important;
+    }
+    .modal-custom-login .close {
+        color: red;
+        font-size: 60px;
+        top: -15px;
+        right: 0px;
+        position: absolute;
+        display: block;
+    }
+    .modal-custom-login{
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+} 

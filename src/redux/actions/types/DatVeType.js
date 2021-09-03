@@ -1,0 +1,5 @@
+export const SET_CHI_TIET_PHONG_VE = 'SET_CHI_TIET_PHONG_VE'
+export const XOA_DANH_SACH_GHE_DANG_DAT = 'XOA_DANH_SACH_GHE_DANG_DAT'
+export const DAT_GHE = 'DAT_GHE'
+export const CHUYEN_TAB = 'CHUYEN_TAB';
+export const QUAY_LAI_TAB = 'QUAY_LAI_TAB'

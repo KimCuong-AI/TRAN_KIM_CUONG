@@ -1,0 +1,3 @@
+export const SET_FILM= "SET_FILM";
+export const SET_FILM_DETAIL="SET_FILM_DETAIL";
+export const SET_THONG_TIN_PHIM="SET_THONG_TIN_PHIM";

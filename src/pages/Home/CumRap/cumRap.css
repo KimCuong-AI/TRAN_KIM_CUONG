@@ -1,0 +1,72 @@
+/*border*/
+.cumHeThongRap {
+    border: 1px solid #dee2e6;
+    box-shadow: 1px 5px 8px 0px rgba(202, 197, 197, 0.571);
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/*scrollbar cụm rạp*/
+.cum__rap {
+    height: 550px;
+    overflow-y: auto;
+}
+.cum__rap::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ddd9d9;
+}
+.cum__rap::-webkit-scrollbar {
+    width: 5px;
+}
+.cum__rap::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #565050aa;
+}
+
+/*scrollbar chi tiết phim*/
+.chiTietPhim {
+    height: 550px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.chiTietPhim .ngayGioChieu:hover span:first-child {
+    color: #ff3d00 !important;
+}
+
+.chiTietPhim::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ddd9d9;
+}
+.chiTietPhim::-webkit-scrollbar {
+    width: 5px;
+}
+
+.chiTietPhim::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #565050aa;
+}
+
+.cumHeThongRap .opacity {
+    opacity: 0.5 !important;
+}
+.cumHeThongRap .isactive {
+    opacity: 1 !important;
+}
+
+.cumHeThongRap .cumRapItem:hover {
+    cursor: pointer;
+    opacity: 1 !important;
+}
+.cumHeThongRap .heThongRap:hover {
+    opacity: 1 !important;
+    cursor: pointer;
+}
+@media screen and (max-width:767px){
+    .cum__rap{
+        height:400px
+    }
+    .chiTietPhim{
+        border-top: solid 2px #a09a9aaa;
+        height: 400px;
+    }
+}

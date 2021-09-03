@@ -1,0 +1,44 @@
+
+
+.detail__content{
+    width: 100%;
+    overflow: hidden;
+}
+.detail__content h4, .detail__content h5, .detail__content h6, .detail__content p {
+    color: white;
+}
+.detail__content .film__info__content h5,.detail__content .film__info__content h6,.detail__content .film__info__content h4, .detail__content .film__info__content p {
+    color: #e6f7ff;
+}
+
+
+/* film info */
+.detail__content .film__info {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 100%;
+} 
+.detail__content .film__info__content {
+    max-width: 940px;
+    float: none;
+    margin: auto;
+    clear: both;
+}
+.detail__content .booking__info { 
+    text-align: center;
+    color:  #d2efff;
+    background: red;
+    cursor: pointer;
+    padding:7px ;
+    border-radius: 5px;
+    font-weight: 700;
+    display: block;
+    min-width:180px;
+    max-width: 200px;
+}
+.detail__content .film__info .rating-film{
+    display: none;
+}
+
+

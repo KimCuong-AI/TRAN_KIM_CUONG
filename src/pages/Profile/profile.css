@@ -1,0 +1,81 @@
+
+.profile .image-user {
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+}
+/* tabs manager */
+.profile .profile__none {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-flex;
+    margin: 0px 30px;
+    transition: 0.3s;
+}
+.profile .profile__none:hover {
+    transform: scale(1.2);
+}
+
+.profile .profile__active {
+    transform: scale(1.2);
+    opacity: 1;
+    color: red;
+}
+
+/* renderInfo */
+.profile .info {
+    width: 55%;
+}
+
+.profile .info p {
+    font-size: 16px;
+}
+.profile .info .btn__update {
+    color: white;
+    border: none;
+    background: #28a745;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 600;
+    width: 100%;
+    border-radius: 10px;
+}
+.profile .to-admin{
+    background-color: #00838f;
+    transition: 0.2s;
+   cursor: pointer;
+   border-radius:20px;
+   padding: 10px 15px; 
+}
+
+.profile .to-admin:hover{
+    background-color: #ff3d00!important;
+}
+.profile .fa-location-arrow{
+    transform: rotate(45deg);
+}
+
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+    .profile  .image-user {
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .profile .image-user {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .profile .info {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .profile .info {
+        width: 100%;
+    }
+}

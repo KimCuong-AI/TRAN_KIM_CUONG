@@ -1,0 +1,64 @@
+{
+  "name": "duanlon",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@sweetalert/with-react": "^0.1.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "antd": "^4.16.6",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.2",
+    "formik": "^2.2.9",
+    "history": "^4.10.1",
+    "i18next": "^20.4.0",
+    "i18next-browser-languagedetector": "^6.1.2",
+    "i18next-http-backend": "^1.3.0",
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
+    "react-dom": "^17.0.2",
+    "react-i18next": "^11.11.4",
+    "react-password-toggle-icon": "^1.1.5",
+    "react-redux": "^7.2.4",
+    "react-responsive": "^8.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.4.3",
+    "react-scripts": "4.0.3",
+    "react-scroll": "^1.8.2",
+    "react-slick": "^0.28.1",
+    "react-star-ratings": "^2.3.0",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0",
+    "slick-carousel": "^1.8.1",
+    "sweetalert": "^2.1.2",
+    "web-vitals": "^1.1.2",
+    "yup": "^0.32.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

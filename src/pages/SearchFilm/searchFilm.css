@@ -1,0 +1,126 @@
+/*phần search film*/
+.search .search__content {
+  cursor: pointer;
+}
+.search .search__item {
+  position: relative;
+}
+
+/* phần image overlay */
+.search .search__content img {
+  height: 320px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.search .search__content .film__overlay {
+  border-radius: 10px;
+  position: absolute;
+  padding: 0px !important;
+  margin: 0px !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 320px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  opacity: 0;
+  transition: 0.5s;
+}
+.search .search__content:hover .film__overlay {
+  border-radius: 10px;
+  position: absolute;
+  padding: 0px !important;
+  margin: 0px !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 320px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+@media screen and (max-width: 420px) {
+  .search .search__content img {
+    height: 220px;
+  }
+  .search .film__content .film__item h6:first-child{
+    font-size: 15px !important;
+  }
+  .search .film__content .film__item h6:nth-child(2){
+    font-size: 12px !important;
+  }
+  .search .search__content .film__overlay {
+    height: 220px;
+  }
+  .search .search__content:hover .film__overlay {
+    height: 220px;
+  }
+}
+
+/* play-video-search*/
+.search .play-video-search .button-modal-search  {
+  z-index: 10;
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 30px;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.search .search__content:hover .play-video-search .button-modal-search {
+  opacity: 1;
+}
+/*********/
+
+/**info film*/
+.search .search__content .star-rating {
+  background: rgba(22, 19, 19, 0.578);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: inline-block;
+  border-radius: 0 10px 0 0;
+}
+.search .film__content {
+  position: relative;
+}
+.search .film__item {
+  padding: 5px !important;
+  font-size: 15px;
+}
+.search .search__content:hover .film__item {
+  opacity: 0;
+}
+
+/* button booking ticket */
+.search .booking-ticket {
+  opacity: 0;
+  transition: 0.2s;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 100%;
+  display: block !important;
+  background-color: red !important;
+}
+.search .booking-ticket a {
+  display: block;
+  padding: 8px !important;
+  margin: 0 !important;
+}
+.search .search__content:hover .booking-ticket {
+  opacity: 1;
+  transition: 0.2s;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 100%;
+  display: block !important;
+  background-color: red !important;
+}

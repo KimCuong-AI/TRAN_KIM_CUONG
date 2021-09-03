@@ -1,0 +1,56 @@
+.modal__custom__register {
+    padding: 10px;
+}
+.modal__register {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+
+.modal__custom__register .modal-content {
+    color: white;
+    backdrop-filter: blur(6px);
+    border: none !important;
+    background: #0d3d72a8;
+    height: 100%;
+}
+
+.modal__custom__register .modal-header {
+    position: relative;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+.modal__custom__register .close {
+    z-index: 100;
+    color: red;
+    font-size: 70px;
+    top: -38px;
+    right: -20px;
+    position: absolute;
+    display: block;
+}
+
+.modal__custom__register .form-group h5 {
+    font-family: -moz-initial;
+    color: #bfbfbf;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 480px) {
+    .modal__register {
+        padding: 0px !important ;
+    }
+    .modal__custom__register .close {
+        z-index: 100;
+        color: red;
+        font-size: 60px;
+        top: -16px;
+        right: 0px;
+        position: absolute;
+        display: block;
+    }
+    .modal__custom__register {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+}

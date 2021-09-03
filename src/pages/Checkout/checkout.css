@@ -1,0 +1,184 @@
+.checkout__film {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+/*thông tin khách hàng */
+.checkout__info {
+    padding: 0px 50px;
+    box-shadow: -4px 5px 5px 1px rgba(202, 197, 197, 0.571);
+}
+.checkout__info__item {
+    padding: 20px 0px;
+    border-bottom: #6c757d dashed 1px;
+}
+
+/*
+button đặt vé
+*/
+.checkout__content .btn-booking-disabled {
+    width: 100%;
+    border: none;
+    font-size: 40px;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    margin: 10px 0px;
+    opacity: 0.6;
+    max-width: 500px;
+}
+
+.checkout__content .btn-booking {
+    width: 100%;
+    border: none;
+    font-size: 40px;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    margin: 10px 0px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 5500px;
+}
+
+/*Thời gian giữ vé*/
+
+.checkout__content .ant-statistic-content-value {
+    color: #11559e;
+}
+.checkout__content .ant-statistic-title {
+    color: #11559e;
+    margin-bottom: 0px;
+}
+/***********************/
+
+/* checkour film tabs*/
+.checkout__film .checkout__film__tabs {
+    padding: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f9fe;
+    box-shadow: 1px 3px 8px 1px #87939754;
+}
+.checkout__film .active-tab-none {
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #172d51;
+    position: relative;
+    display: inline-block;
+}
+
+.checkout__film .active-tab-action {
+    font-weight: 600;
+    color: #1866ba;
+    position: relative;
+    display: inline-block;
+}
+.checkout__film .active-tab-action:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #1866ba;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    display: inline-block;
+    transition: all 0.5s;
+}
+.checkout__film .checkout__film__tabs .home:hover{
+    color: #dd2c00 !important;
+}
+
+
+/***************************/
+
+/* to create scroll bar*/
+.checkout__content .danh__sach__ghe {
+    overflow: auto;
+    width: 100%;
+    margin: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+
+.checkout__content .danh__sach__ghe::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+.checkout__content .danh__sach__ghe::-webkit-scrollbar-track {
+    border-radius: 6px;
+    background-color: rgb(218, 215, 215);
+}
+.checkout__content .danh__sach__ghe::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: #6e6b6baa;
+}
+/***************************************************/
+
+/*ghế*/ 
+.ghe {
+    width: 28px;
+    height: 28px;
+    margin: 6px;
+    background-color: #607d8b;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.gheDaDat {
+    background-color: rgb(225, 67, 67) !important;
+    cursor: no-drop;
+} 
+.gheVip {
+    background-color: rgb(255, 165, 0);
+}
+.gheDangDat { 
+    background-color: rgb(10, 195, 10); 
+}
+
+.gheMinhDat {
+    color: orange !important;
+    background-color: papayawhip !important;
+    border: orange solid 1px;
+}
+/***************************************************/
+
+
+ @media screen and (max-width:575px) {
+     .checkout__content .note p{
+         font-size: 13px;
+     }
+    .ghe {
+        font-size:12px;
+        width: 23px;
+        height: 23px;
+        margin: 3px;
+        background-color: #607d8b;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+    .gheDaDat {
+        background-color: rgb(225, 67, 67) !important;
+        cursor: no-drop;
+    } 
+    .gheVip {
+        background-color: rgb(255, 165, 0);
+    }
+    .gheDangDat { 
+        background-color: rgb(10, 195, 10); 
+    }
+    .gheMinhDat {
+        color: orange !important;
+        background-color: papayawhip !important;
+        border: orange solid 1px;
+    }
+ }
+
+ @media screen and (max-width:320px){
+    .checkout__film .active-tab-none {
+        font-size: 14px;
+    }  
+} 
