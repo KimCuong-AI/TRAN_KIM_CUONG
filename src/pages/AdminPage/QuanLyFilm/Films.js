@@ -17,7 +17,7 @@ const Films = () => {
                 dispatch(xoaPhim(film))
 
             },
-            onCancel() {
+            onCancel() { 
             },
         });
     }

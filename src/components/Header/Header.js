@@ -60,7 +60,7 @@ const Header = () => {
                         </li>
                     </ul>
                     {!localStorage.getItem(USER_LOGIN) ?
-                        <ul className="navbar-nav ml-auto mt-lg-0 authentication">
+                        <ul className="navbar-nav mt-lg-0 authentication">
                             <li className="nav-item active">
                                 <NavLink className="nav-link d-flex align-items-center" to="/login">
                                     <i className="fa fa-user-circle"></i>
