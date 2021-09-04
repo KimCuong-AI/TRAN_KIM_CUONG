@@ -1,4 +1,4 @@
-import React, { memo, useState } from "react";
+import React, {useState } from "react";
 import ModalTime from "./ModalTime";
 import { Statistic } from 'antd';
 const Reservation = () => {
@@ -17,4 +17,4 @@ const Reservation = () => {
     </div>
   );
 };
-export default memo(Reservation);
+export default Reservation;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router';
 import Header from '../../components/Header/Header';
-import LoadingComponent from '../../components/Loading/LoadingComponent';
+import LoadingComponent from '../../components/Loading/LoadingPage';
 import FooterContent from '../../pages/Home/Footer/FooterContent';
 import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
 const Hometemplate = (props) => {

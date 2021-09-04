@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, {useEffect } from 'react';
 import { Table } from 'antd';
 import moment from 'moment';
 import { USER_LOGIN } from '../../util/setting';
@@ -7,6 +7,7 @@ import backgroundApp from '../../assets/img/backapp.jpg';
 import './historyCheckout.css'
 import { layThongTinTaiKhoanAction } from '../../redux/actions/UserAction';
 import _ from "lodash";
+import Loading from '../../components/Loading/Loading';
 const HistoryCheckout = (props) => {
     const dispatch = useDispatch()
     let thongTinTK = useSelector(state => state.UserReducer.thongTin)
@@ -89,6 +90,7 @@ const HistoryCheckout = (props) => {
     ];
     return (
         <div style={{ background: `url(${backgroundApp})`, minHeight: '100vh' }}>
+            <Loading/>
             <div className=' history__checkout' >
                 <h1 className='text-center' style={{ color: '#e6f7ff' }}>Danh sách vé đã đặt </h1>
                 <Table dataSource={dataSource} columns={columns} rowKey={'maVe'} scroll={{ x: 'true' }} />

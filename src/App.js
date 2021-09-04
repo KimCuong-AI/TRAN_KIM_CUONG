@@ -1,7 +1,7 @@
 import './App.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Redirect, Route, Router, Switch } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Router, Switch } from 'react-router-dom';
 //thư viện giúp chuyển hướng trang
 import { createBrowserHistory } from 'history'
 import HomeContent from './pages/Home/HomContent/HomeContent';

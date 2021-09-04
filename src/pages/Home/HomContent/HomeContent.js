@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from '../Carousel/Carousel';
 import CumRap from '../CumRap/CumRap';
 import News from '../News/News';
-import LoadingComponent from '../../../components/Loading/LoadingComponent';
+import LoadingComponent from '../../../components/Loading/LoadingPage';
 import ShowTimeFilm from './../ShowTimeFilm/ShowTimeFilm';
 import MovieApp from '../MovieApp/MovieApp';
 const HomeContent = () => {

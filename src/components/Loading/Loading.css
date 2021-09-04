@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 55;
 }
 .loading {
     position: fixed;
@@ -21,7 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
+    z-index: 50;
     font-size: 3rem;
     color: #e6f7ff;
 }

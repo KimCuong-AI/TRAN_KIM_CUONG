@@ -7,7 +7,7 @@ import StarRatings from 'react-star-ratings';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Progress } from 'antd';
 import { useMediaQuery } from 'react-responsive'
-import LoadingComponent from '../../components/Loading/LoadingComponent';
+import LoadingComponent from '../../components/Loading/LoadingPage';
 import Mobile from './Mobile';
 import ShowTimesDetail from './ShowTimesDetail';
 const Detail = (props) => {

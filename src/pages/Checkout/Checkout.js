@@ -4,21 +4,24 @@ import { Redirect } from "react-router";
 import { USER_LOGIN } from "../../util/setting";
 import _ from "lodash";
 import { UserAddOutlined } from "@ant-design/icons";
-import LoadingComponent from "../../components/Loading/LoadingComponent";
-import Loading from "../../components/Loading/Loading";
 import { datVeAction, layChiTietPhongVeAction, quaylaitab } from "../../redux/actions/DatveAction";
 import './checkout.css'
 import HistoryCheckout from "./HistoryCheckout";
 import Reservation from "./ReservationTime.js";
-import { DAT_GHE } from "../../redux/actions/types/DatVeType";
+import { DAT_GHE, XOA_DANH_SACH_GHE_DANG_DAT } from "../../redux/actions/types/DatVeType";
 import { history } from "../../App";
-import FooterContent from "../Home/Footer/FooterContent";
 import ScrollToTop from './../../components/ScrollToTop/ScrollToTop';
-import Header from "../../components/Header/Header";
+import LoadingCheckout from "../../components/Loading/LoadingCheckout";
 const Checkout = (props) => {
     //chuyển tab sau khi đặt
     const { activeCheckoutTab } = useSelector(state => state.QuanLyDatVeReducer);
     const [checkoutTab, setCheckoutTab] = useState('chonGhe')
+    useEffect(() => {
+        dispatch(dispatch({
+            type: XOA_DANH_SACH_GHE_DANG_DAT
+        }))
+        dispatch(quaylaitab)
+    }, [props.location.pathname])
     useEffect(() => {
         setCheckoutTab(activeCheckoutTab)
     }, [activeCheckoutTab])
@@ -206,8 +209,7 @@ const Checkout = (props) => {
     }
     return (
         <div className='checkout__film'>
-            <LoadingComponent />
-            <Loading />
+            <LoadingCheckout />
             <div className='checkout__film__tabs'>
                 <div className='row'>
                     <div className='col-12 col-sm-9'>
@@ -225,7 +227,7 @@ const Checkout = (props) => {
                     <div className='col-12 col-sm-3 text-center pt-3 p-sm-0'>
                         <span className='h4 py-1 px-2 home ' onClick={() => {
                             history.push('/');
-                        }} style={{ cursor: 'pointer',color:'#37474f'}}> <i className="fa fa-home" aria-hidden="true"></i> <span className='h5'>Trang chủ</span> </span>
+                        }} style={{ cursor: 'pointer', color: '#37474f' }}> <i className="fa fa-home" aria-hidden="true"></i> <span className='h5'>Trang chủ</span> </span>
                     </div>
                 </div>
             </div>
@@ -236,7 +238,7 @@ const Checkout = (props) => {
             <div >
                 {checkoutTab == 'ketQua' ? <HistoryCheckout /> : ''}
             </div>
-            <ScrollToTop/>
+            <ScrollToTop />
         </div>
     );
 };
