@@ -4,8 +4,6 @@ import { useFormik } from 'formik'
 import * as Yup from 'yup';
 import { useDispatch } from 'react-redux'
 import { UserAddOutlined } from '@ant-design/icons';
-import { ACCESSTOKEN, DOMAIN } from '../../../../util/setting';
-import axios from 'axios';
 import './themNguoiDung.css'
 import swal from '@sweetalert/with-react'
 import { layDanhSachNguoiDungAction } from '../../../../redux/actions/UserAction';

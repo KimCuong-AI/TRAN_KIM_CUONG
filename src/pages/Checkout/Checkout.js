@@ -220,7 +220,7 @@ const Checkout = (props) => {
                         <span className={`${checkoutTab == 'ketQua' ? 'active-tab-action' : ''} active-tab-none   mx-3`} style={{ cursor: 'pointer' }} onClick={() => {
                             setCheckoutTab('ketQua')
                             dispatch({
-                                type: 'XOA_DANH_SACH_GHE_DANG_DAT'
+                                type: XOA_DANH_SACH_GHE_DANG_DAT
                             })
                         }}> 2. KẾT QUẢ ĐẶT VÉ</span>
                     </div>
