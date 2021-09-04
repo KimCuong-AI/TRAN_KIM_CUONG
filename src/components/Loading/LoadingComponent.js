@@ -8,7 +8,6 @@ const LoadingComponent = () => {
         setState({ Loading: true })
         setTimeout(() => {
             setState({ Loading: false });
-
         }, 600)
     },[])
     return (

@@ -103,7 +103,6 @@ const Profile = (props) => {
                 <History thongTinTK={thongTinTK} />
             </div>
         )
-
     }
     return (
         <div className='container-fluid'>

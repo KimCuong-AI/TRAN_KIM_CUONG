@@ -1,10 +1,10 @@
 import React from "react";
 import { history } from "../../App";
 import './index.css'
-export default class RouteNotFound extends React.Component {
-  render() {
-    let r = [];
-      r.push(<div >
+const RouteNotFound = () => {
+  return (
+    <div className='container pt-3'>
+      <div >
         <section className="page_404">
           <div className="container">
             <div className="row">
@@ -16,20 +16,19 @@ export default class RouteNotFound extends React.Component {
                   <div className="contant_box_404">
                     <h3 className="h2">
                       Có vẻ bạn đang bị lạc 😊
-            </h3>
-                    <h5>Trang bạn đang tìm không tồn tại!</h5>  
-                    <span onClick={() => {  
+                    </h3>
+                    <h5>Trang bạn đang tìm không tồn tại!</h5>
+                    <span onClick={() => {
                       history.push('/')
-                    }} className="link_404 h4" style={{cursor:'pointer'}}>Quay lại trang chủ</span>
+                    }} className="link_404 h4" style={{ cursor: 'pointer' }}>Quay lại trang chủ</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-      </div>)
-    return <div className='container pt-3'>
-      {r}
-    </div>;
-  }
+      </div>
+    </div>
+  )
 }
+export default RouteNotFound;

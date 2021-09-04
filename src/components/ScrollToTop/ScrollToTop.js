@@ -4,8 +4,6 @@ import toppng from '../../assets/img/toppng.png'
 
 export default function ScrollToTop() {
     const [isVisible, setIsVisible] = useState(false);
-
-    // Show button when page is scrolled upto given distance
     const toggleVisibility = () => {
         if (window.pageYOffset > 200) {
             setIsVisible(true);
@@ -13,16 +11,12 @@ export default function ScrollToTop() {
             setIsVisible(false);
         }
     };
-
-    // Set the top cordinate to 0
-    // make scrolling smooth
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
             behavior: "smooth"
         });  
     };
-
     useEffect(() => {
         window.addEventListener("scroll", toggleVisibility);
     }, []);
