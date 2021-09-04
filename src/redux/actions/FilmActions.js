@@ -39,7 +39,7 @@ export const themPhimUpLoadHinhAction = (formData) => {
             const result = await quanLyPhimService.themPhimUpLoadHinh(formData)
             await swal(
                 <div>
-                    <h5>Bạn đã thêm phim thành công</h5>
+                    <h5>Thêm phim thành công!</h5>
                 </div>
             )
             dispatch(getApiFilmAction())
@@ -65,7 +65,8 @@ export const layThongTinPhimAction = (maPhim) => {
             dispatch(hideLoadingAction)
         }
         catch (error) {
-        }
+            dispatch(hideLoadingAction)
+        } 
     }
 }
 //admin cập nhật phim
