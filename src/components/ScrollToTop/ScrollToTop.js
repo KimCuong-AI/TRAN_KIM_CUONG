@@ -5,7 +5,7 @@ import toppng from '../../assets/img/toppng.png'
 export default function ScrollToTop() {
     const [isVisible, setIsVisible] = useState(false);
     const toggleVisibility = () => {
-        if (window.pageYOffset > 200) {
+        if (window.pageYOffset > 300) {
             setIsVisible(true);
         } else {
             setIsVisible(false);
