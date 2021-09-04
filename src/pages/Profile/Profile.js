@@ -111,7 +111,7 @@ const Profile = (props) => {
                 <div className='col-12 col-lg-3 text-center mb-4'>
                     <img src={userImgae} alt='...' className='image-user' />
                     <h3 className='text-danger p-2'>{thongTinTK.taiKhoan}</h3>
-                    {thongtin.maLoaiNguoiDung === 'QuanTri' ? <span className='h6 text-white to-admin' onClick={() => {
+                    {thongtin?.maLoaiNguoiDung === 'QuanTri' ? <span className='h6 text-white to-admin' onClick={() => {
                         history.push(('/admin/users'))
                     }}>Đi đến trang quản trị <i className="fa fa-location-arrow"></i></span> : ''} 
                 </div>

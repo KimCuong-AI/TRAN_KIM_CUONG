@@ -103,7 +103,7 @@ export const xoaPhim = (maPhim) => {
         catch (error) {
             await swal(
                 <div>
-                    {error.response?.data !== undefined ? <h5>{error.response?.data}</h5> : <h5>Xóa không thành công, thử lại sau!</h5>}
+                    {error.response?.data !== undefined ? <h5>{error.response?.data}</h5> : <h5>Xóa chưa thành công!</h5>}
                 </div>
             )
         }
