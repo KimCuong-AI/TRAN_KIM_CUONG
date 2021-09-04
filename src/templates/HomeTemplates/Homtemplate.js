@@ -6,7 +6,7 @@ import FooterContent from '../../pages/Home/Footer/FooterContent';
 import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
 const Hometemplate = (props) => {
     return (
-        <Route path={props.path}  render={(propsRoute) => {
+        <Route exact path={props.path}  render={(propsRoute) => {
             return <div style={{minHeight:'100vh'}}>
                 <LoadingComponent/>
                 <Header />

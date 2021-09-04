@@ -46,12 +46,6 @@
 .showtimes__info h6 {
     color: white;
 }
-@media screen and (max-width: 767px) {
-    .showtimes__info .trailer {
-        display: none;
-    }
-}
-
 /* phần chuyển tab */
 .showtime__content .none-active-tab:hover {
     transform: scale(1.1);

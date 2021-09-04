@@ -12,7 +12,6 @@ export default class SearchFilm extends React.Component {
         searchText: "",
         searchResults: []
     };
-
     handleSearch = async () => {
         let tenPhim = this.props.location.state?.searchText;
         try {
