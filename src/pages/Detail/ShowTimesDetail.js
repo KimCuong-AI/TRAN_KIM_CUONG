@@ -40,10 +40,13 @@ const ShowTimesDetail = (props) => {
                         <p className='text-justify'>{thongTinChiTiet.moTa}</p>
                     </div>
                 </div>
-                <div className='trailer'>
-                    <h5>Trailer phim:</h5>
+                <div className='trailer'>          
                     {isBigScreen &&
-                        <iframe src={thongTinChiTiet.trailer} frameBorder='0' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allow="fullscreen;"></iframe>}
+                         <div>
+                            <h5>Trailer phim:</h5>
+                            <iframe src={thongTinChiTiet.trailer} frameBorder='0' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allow="fullscreen;"></iframe>
+                        </div>
+                      }
                 </div>
             </div>
         )
